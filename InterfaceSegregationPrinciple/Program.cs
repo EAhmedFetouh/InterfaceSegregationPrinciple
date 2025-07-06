@@ -6,8 +6,13 @@
 
 using InterfaceSegregationPrinciple.ISP;
 
-//IUserManager content = new RegularUser();
-//content.ViewContent();
+var regularUser = new RegularUser();
+regularUser.ViewContent();
+
+var adminUser = new AdminUser();
+adminUser.ViewContent();
+adminUser.AddUser();
+adminUser.RemoveUser();
 
 
 //public interface IUser
